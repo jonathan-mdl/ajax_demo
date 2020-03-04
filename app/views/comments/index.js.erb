@@ -1,5 +1,6 @@
  // clear all comments if any
 $('ul').html('')
-<% @comments.each do |comment| %>
-  $('ul').append('<li><%= comment.content %></li>');
-<% end %>
+// Fills the ul list with the _comment.html.erb partial 
+// with each comment
+  $('ul').append('<%= j render @comments %>');
+

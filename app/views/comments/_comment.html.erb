@@ -1,1 +1,6 @@
-<li><%= comment.content %></li>
+<!--<li><%= comment.content %></li>-->
+
+<li id="comment_<%= comment.id%>">
+    <%= comment.content%>
+    <a class='delete_comment' href='#'>Eliminar</a>
+    <a class='update_comment' href='#'>Actualizar</a></li>

@@ -1,2 +1,2 @@
-$('ul').append('<li><%= @comment.content %></li>')
+$('ul').append('<%= j render @comment %>')
 $('[type=text]').val('')
